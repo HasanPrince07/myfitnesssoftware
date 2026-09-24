@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Invoice</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #e9ebe6;
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+
+        header {
+            background-color: #061414;
+            padding: 12px 32px;
+        }
+
+        header h2 {
+            color: #e9ebe6;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        main {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .invoice-container {
+            width: 100%;
+            max-width: 700px;
+            background-color: transparent;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .invoice-top-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .invoice-bottom-content {
+            margin-top: 30px;
+            font-size: 15px;
+            text-align: left;
+            line-height: 1.5;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .label-cell {
+            text-align: left;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        .value-cell {
+            text-align: right;
+        }
+
+        .bg-danger-light {
+            background-color: #fff5f5;
+        }
+        .text-danger {
+            color: #d32f2f;
+        }
+        .text-success {
+            color: #2e7d32;
+        }
+
+        footer {
+            background-color: #061414;
+            padding: 15px 32px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        footer a {
+            color: #93c900;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>{{#if gym_name}} {{gym_name}} {{else}} your gym name {{/if}}</h2>
+    </header>
+
+    <main>
+        <div class="invoice-container">
+            <h3>INVOICE</h3>
+            
+            <div class="invoice-top-content">
+                <div>
+                    <strong>Invoice No:</strong> #{{invoice_no}}<br>
+                    <strong>Invoice Date:</strong> {{created_at}}
+                </div>
+                <div style="text-align: right;">
+                    <strong>Member ID:</strong> {{member_id}}<br>
+                    <strong>Expiry Date:</strong> {{#if plan_expiry_date}} {{plan_expiry_date}} {{else}} N/A {{/if}}
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <td class="label-cell">Member Name</td>
+                    <td class="value-cell">{{member_name}}</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Phone Number</td>
+                    <td class="value-cell">{{member_phone}}</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Plan Name</td>
+                    <td class="value-cell">{{#if plan_name}} {{plan_name}} {{else}} No Plan {{/if}}</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Payment Status</td>
+                    <td class="value-cell">{{payment_status}}</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Total Price</td>
+                    <td class="value-cell">₹{{#if total_amount}} {{total_amount}} {{else}} 0 {{/if}}</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Pay Amount</td>
+                    <td class="value-cell">₹{{#if pay_amount}} {{pay_amount}} {{else}} 0 {{/if}}</td>
+                </tr>
+                
+                <tr class="{{#if remaining_amount}} bg-danger-light text-danger {{/if}}">
+                    <td class="label-cell">Remaining Amount</td>
+                    <td class="value-cell">
+                        <strong class="{{#unless remaining_amount}} text-success {{/unless}}">
+                            ₹{{#if remaining_amount}} {{remaining_amount}} {{else}} 0 {{/if}}
+                        </strong>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="invoice-bottom-content">
+                <strong>Address:</strong> {{#if gym_address}} {{gym_address}} {{else}} N/A {{/if}}<br>
+                <strong>Phone:</strong> {{#if gym_phone}} {{gym_phone}} {{else}} N/A {{/if}}<br>
+                <strong>Email:</strong> {{#if gym_email}} {{gym_email}} {{else}} N/A {{/if}}
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://myfitnesssoftware.com" target="_blank">www.myfitnesssoftware.com</a>
+    </footer>
+</body>
+
+</html>
