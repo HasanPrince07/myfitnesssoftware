@@ -1,0 +1,849 @@
+#features-section,
+#prices-section,
+#testimonials-section,
+#footer-section {
+    scroll-margin-top: 9.5rem;
+}
+
+#features-section,
+#status-section,
+#prices-section,
+#testimonials-section,
+#faq-section {
+    margin-top: 6.5rem;
+}
+
+#hero-section h2,
+#features-section h2,
+#status-section h2,
+#prices-section h2,
+#testimonials-section h2,
+#faq-section h2 {
+    font-size: 2.25rem;
+}
+
+#hero-section span,
+#features-section span,
+#status-section span,
+#prices-section span,
+#testimonials-section span,
+#faq-section span {
+    color: var(--main-color);
+}
+
+#features-section h3,
+#status-section h3,
+#prices-section h3,
+#testimonials-section h3,
+#faq-section h3 {
+    font-size: 1.3rem;
+}
+
+#features-section p,
+#status-section p,
+#testimonials-section p,
+#faq-section p,
+#footer-section p {
+    font-size: 1rem;
+}
+
+#hero-section p,
+#features-section p {
+    color: var(--dark-color);
+}
+
+#hero-section .p18,
+#status-section .p18,
+#testimonials-section .p18 {
+    font-size: 1.12rem;
+}
+
+#header-section {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#header-section .logo {
+    width: 65%;
+    height: auto;
+    cursor: pointer;
+}
+
+#header-section li,
+#header-section a {
+    color: var(--light-color);
+}
+
+#header-section li:hover,
+#header-section a:hover {
+    color: var(--main-color);
+}
+
+#header-section li:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+#header-section button {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+#header-section button:hover {
+    background-color: var(--main-color);
+}
+
+
+
+#hero-section {
+    background-color: var(--light-color);
+}
+
+#hero-section .btn-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#hero-section img {
+    width: 100%;
+    height: 400px;
+}
+
+#hero-section button {
+    border: 2px solid var(--dark-color);
+}
+
+#hero-section .btn1 {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#hero-section .btn1:hover {
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+#hero-section .btn1:hover .btn-img {
+    filter: brightness(0);
+}
+
+#hero-section .btn2 {
+    color: var(--dark-color);
+}
+
+#hero-section .btn2:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#hero-section .btn2:hover .btn-img {
+    filter: brightness(0) invert(1);
+}
+
+
+
+#features-section .features-div {
+    min-height: 20rem;
+}
+
+#features-section .features-div:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#features-section img {
+    width: 25%;
+}
+
+#features-section p {
+    letter-spacing: 0.5px;
+}
+
+
+
+#status-section .status-container {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 32px;
+}
+
+#status-section .status-div {
+    border: 1px solid var(--light-color);
+}
+
+#status-section h4 {
+    font-size: 2rem;
+}
+
+#status-section img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#status-section button {
+    border: 2px solid var(--light-color);
+}
+
+#status-section .btn1 {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+#status-section .btn1:hover {
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+#status-section .btn1:hover .btn-img {
+    filter: brightness(0) invert(1);
+}
+
+#status-section .btn2 {
+    color: var(--light-color);
+}
+
+#status-section .btn2:hover {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+#status-section .btn2:hover .btn-img {
+    filter: brightness(0);
+}
+
+
+
+#prices-section {
+    background-color: var(--light-color);
+}
+
+#prices-section .prices-div {
+    background-color: var(--white-color);
+}
+
+#prices-section h4 {
+    font-size: 1.8rem;
+}
+
+#prices-section p {
+    font-size: 1.2rem;
+}
+
+#prices-section .rate-text {
+    font-size: 3rem;
+    color: var(--dark-color) !important;
+}
+
+#prices-section .point-text {
+    font-size: 1.1rem;
+}
+
+#prices-section .height-div {
+    min-height: 20rem;
+}
+
+#prices-section img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+#prices-section .prices-div .red,
+#prices-section .prices-div .blue,
+#prices-section .prices-div .purple,
+#prices-section .prices-div .green {
+    color: var(--white-color);
+}
+
+#prices-section .prices-div .red {
+    background-color: var(--orange-color);
+    border: 2px solid var(--orange-color);
+}
+
+#prices-section .prices-div .blue {
+    background-color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+}
+
+#prices-section .prices-div .purple {
+    background-color: var(--purple-color);
+    border: 2px solid var(--purple-color);
+}
+
+#prices-section .prices-div .green {
+    background-color: var(--green-color);
+    border: 2px solid var(--green-color);
+}
+
+#prices-section button:hover {
+    background-color: transparent !important;
+    color: var(--dark-color) !important;
+}
+
+
+
+#testimonials-section .slider-wrapper {
+    overflow: hidden;
+}
+
+#testimonials-section .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#testimonials-section .slider-page {
+    min-width: 100%;
+}
+
+#testimonials-section .testi-div {
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+#testimonials-section .quote-img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#testimonials-section .desc-text {
+    min-height: 8rem;
+    border-bottom: 2px solid var(--light-color);
+}
+
+#testimonials-section .add-div {
+    min-height: 4.4rem;
+}
+
+#testimonials-section .user-name {
+    letter-spacing: 1px;
+    color: var(--dark-color);
+}
+
+#testimonials-section .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white-color);
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid var(--white-color);
+}
+
+#testimonials-section .custom-arrow:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#testimonials-section .prev-arrow {
+    left: 0;
+}
+
+#testimonials-section .next-arrow {
+    right: 0;
+}
+
+#testimonials-section .dot-div {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+#testimonials-section .dot-div.active {
+    background: var(--main-color);
+    width: 1.5rem;
+    border-radius: 10px;
+}
+
+
+
+#faq-section {
+    background-color: var(--light-color);
+}
+
+#faq-section .faq-div {
+    border: 2px solid var(--dark-color);
+}
+
+#faq-section .faq-div h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#faq-section .faq-arrow {
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#faq-section .faq-answer-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+    overflow: hidden;
+}
+
+#faq-section .faq-answer-content {
+    min-height: 0;
+}
+
+#faq-section .faq-answer-content p {
+    line-height: 1.6;
+    padding-top: 14px;
+}
+
+#faq-section .faq-div.is-open .faq-answer-wrapper {
+    grid-template-rows: 1fr;
+}
+
+#faq-section .faq-div.is-open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+
+
+#footer-section {
+    background-color: var(--dark-color);
+}
+
+#footer-section .logo {
+    width: 50%;
+    height: auto;
+}
+
+#footer-section h5 {
+    color: var(--main-color);
+}
+
+#footer-section p {
+    color: var(--light-color);
+}
+
+#footer-section button {
+    color: var(--light-color);
+}
+
+#footer-section button:hover {
+    color: var(--main-color);
+}
+
+#footer-section button:hover .btn-img {
+    filter: brightness(0) invert(1);
+}
+
+#footer-section a:hover {
+    color: var(--white-color);
+}
+
+#footer-section img {
+    width: 1.5rem;
+    height: auto;
+}
+
+#footer-section .icon-link:hover {
+    background-color: var(--main-color);
+}
+
+#footer-section .icon-btn {
+    width: 1.8rem;
+    height: auto;
+}
+
+#footer-section .icon-img {
+    width: 100%;
+    height: auto;
+}
+
+#footer-section .trial-btn {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    border: 2px solid var(--light-color);
+}
+
+#footer-section .trial-btn:hover {
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    #hero-section .container,
+    #features-section .container,
+    #prices-section .container,
+    #testimonials-section .container,
+    #faq-section .container {
+        max-width: 90%;
+    }
+
+    #header-section .logo {
+        width: 70%;
+    }
+
+    #header-section li,
+    #header-section a {
+        font-size: 0.95rem;
+    }
+
+    #header-section button {
+        font-size: 0.9rem;
+    }
+
+    #features-section h4 {
+        font-size: 1.2rem;
+    }
+
+    #features-section img {
+        width: 35%;
+    }
+
+    #prices-section .height-div {
+        min-height: 26rem;
+    }
+
+    #prices-section h4 {
+        font-size: 1.6rem;
+    }
+
+    #prices-section p {
+        font-size: 1rem;
+    }
+
+    #prices-section .rate-text {
+        font-size: 2.6rem;
+    }
+
+    #prices-section .point-text {
+        font-size: 1rem;
+    }
+
+    #footer-section .logo {
+        width: 40%;
+    }
+
+    #footer-section p,
+    #footer-section .text-capitalize {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    #features-section,
+    #status-section,
+    #prices-section,
+    #testimonials-section,
+    #faq-section {
+        margin-top: 5rem;
+    }
+
+    #hero-section h2,
+    #features-section h2,
+    #status-section h2,
+    #prices-section h2,
+    #testimonials-section h2,
+    #faq-section h2 {
+        font-size: 1.90rem;
+    }
+
+    #features-section h3,
+    #status-section h3,
+    #prices-section h3,
+    #testimonials-section h3,
+    #faq-section h3 {
+        font-size: 1.2rem;
+    }
+
+    #header-section button,
+    #hero-section button,
+    #status-section button,
+    #prices-section button,
+    #footer-section button {
+        font-size: 0.95rem;
+    }
+
+    #features-section p,
+    #status-section p,
+    #testimonials-section p,
+    #faq-section p {
+        font-size: 0.95rem;
+    }
+
+    #hero-section .p18,
+    #status-section .p18,
+    #prices-section .p18,
+    #testimonials-section .p18 {
+        font-size: 1.05rem;
+    }
+
+    #header-section .logo {
+        width: 90%;
+        height: auto;
+    }
+
+    #header-section .menu-icon {
+        width: 90%;
+        height: auto;
+    }
+
+    #header-section li,
+    #header-section a {
+        font-size: 0.95rem;
+    }
+
+    #header-section li:hover {
+        border-bottom: none;
+    }
+
+    #features-section .features-div {
+        min-height: 22rem;
+    }
+
+    #features-section h4 {
+        font-size: 1.15rem;
+    }
+
+    #status-section .container {
+        max-width: 90%;
+    }
+
+    #status-section h4 {
+        font-size: 1.4rem;
+    }
+
+    #prices-section h4 {
+        font-size: 1.6rem;
+    }
+
+    #prices-section p {
+        font-size: 1.1rem;
+    }
+
+    #prices-section .rate-text {
+        font-size: 2.5rem;
+    }
+
+    #prices-section .point-text {
+        font-size: 1rem;
+    }
+
+    #prices-section .height-div {
+        min-height: 28rem;
+    }
+
+    #prices-section img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #testimonials-section .desc-text {
+        min-height: 7rem;
+    }
+
+    #testimonials-section .add-div {
+        min-height: 4.2rem;
+    }
+
+    #testimonials-section .user-name {
+        letter-spacing: 0.5px;
+        color: var(--dark-color);
+    }
+
+    #testimonials-section .custom-arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #faq-section .faq-div h4 {
+        font-size: 1.2rem;
+    }
+
+    #footer-section .logo {
+        width: 50%;
+    }
+
+    #footer-section .icon-btn {
+        width: 1.7rem;
+    }
+
+    #footer-section .icon-link:hover {
+        background-color: transparent;
+    }
+
+    #footer-section .text-capitalize {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #header-section .logo {
+        width: 80%;
+    }
+
+    #header-section .menu-icon {
+        width: 45%;
+    }
+
+    #hero-section img {
+        height: 23rem;
+    }
+
+    #prices-section h4 {
+        font-size: 1.8rem;
+    }
+
+    #prices-section .p18 {
+        font-size: 1.2rem;
+    }
+
+    #prices-section .height-div {
+        min-height: 20rem;
+    }
+
+    #footer-section .logo {
+        width: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    #features-section,
+    #status-section,
+    #prices-section,
+    #testimonials-section,
+    #faq-section {
+        margin-top: 3.8rem;
+    }
+
+    #hero-section h2,
+    #features-section h2,
+    #status-section h2,
+    #prices-section h2,
+    #testimonials-section h2,
+    #faq-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #features-section h3,
+    #status-section h3,
+    #prices-section h3,
+    #testimonials-section h3,
+    #faq-section h3 {
+        font-size: 1rem;
+    }
+
+    #header-section button,
+    #hero-section button,
+    #status-section button,
+    #prices-section button,
+    #footer-section button {
+        font-size: 0.85rem;
+    }
+
+    #features-section p,
+    #status-section p,
+    #prices-section p,
+    #testimonials-section p,
+    #faq-section p {
+        font-size: 0.9rem;
+    }
+
+    #hero-section .p18,
+    #status-section .p18,
+    #prices-section .p18,
+    #testimonials-section .p18 {
+        font-size: 1rem;
+    }
+
+    #header-section .logo {
+        width: 100%;
+    }
+
+    #header-section .menu-icon {
+        width: 85%;
+    }
+
+    #header-section a,
+    #header-section li {
+        font-size: 0.9rem;
+    }
+
+    #header-section li:hover {
+        color: var(--light-color);
+        border-bottom: none;
+    }
+
+    #hero-section img {
+        width: 100%;
+        height: 12rem;
+    }
+
+    #features-section .features-div {
+        min-height: 18rem;
+    }
+
+    #features-section img {
+        width: 30%;
+    }
+
+    #status-section .container {
+        max-width: 100%;
+    }
+
+    #status-section .status-container {
+        border-radius: 0px;
+    }
+
+    #prices-section h4 {
+        font-size: 1.5rem;
+    }
+
+    #prices-section p,
+    #prices-section .point-text {
+        font-size: 1rem;
+    }
+
+    #prices-section .height-div {
+        min-height: auto;
+    }
+
+    #testimonials-section .mid-container {
+        max-width: 95%;
+    }
+
+    #testimonials-section .prev-arrow {
+        left: 5px;
+    }
+
+    #testimonials-section .next-arrow {
+        right: 5px;
+    }
+
+    #testimonials-section .desc-text {
+        font-size: 0.98rem;
+    }
+
+    #faq-section .faq-div h4 {
+        font-size: 1rem;
+    }
+
+    #faq-section .faq-arrow {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    #footer-section .logo {
+        width: 45%;
+    }
+
+    #footer-section .text-capitalize {
+        font-size: 0.95rem;
+    }
+}

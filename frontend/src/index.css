@@ -1,0 +1,52 @@
+:root {
+  --dark-color: #061414;
+  --light-color: #e9ebe6;
+  --grey-color: #6c757d;
+  --white-color: #ffffff;
+  --main-color: #93c900;
+  --orange-color: #ec6733;
+  --blue-color: #3b82f6;
+  --purple-color: #6964f1;
+  --green-color: #22c55e;
+  --red-color: #dc3545;
+
+  --transition-smooth: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.my-custom-toast {
+  padding: 15px 20px 15px 15px;
+}
+
+
+@media screen and (max-width: 576px) {
+  .my-custom-toast {
+    width: 90%;
+    margin-top: 10px;
+  }
+}

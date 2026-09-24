@@ -1,0 +1,282 @@
+#admin-section .spinner,
+#action-modal-section .spinner {
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+
+#admin-section button {
+  font-size: 0.9rem;
+}
+
+#admin-section .green-btn,
+#admin-section .black-btn,
+#admin-section .grey-btn {
+  color: var(--white-color);
+}
+
+#admin-section .green-btn {
+  background-color: var(--green-color);
+  border: 2px solid var(--green-color);
+}
+
+#admin-section .black-btn {
+  background-color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+}
+
+#admin-section .grey-btn {
+  background-color: var(--grey-color);
+  border: 2px solid var(--grey-color);
+}
+
+#admin-section button:hover,
+#admin-section a:hover {
+  background-color: transparent;
+  color: var(--dark-color);
+}
+
+#admin-section .search-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+#admin-section .multi-delete-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+
+#admin-section .multi-delete-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#admin-section .multi-delete-btn.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+
+#admin-section table th {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+#admin-section table span {
+  font-size: 1rem;
+}
+
+#admin-section table button {
+  background-color: var(--white-color);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+#admin-section .edit-btn:hover {
+  background-color: var(--blue-color);
+}
+
+#admin-section .delete-btn:hover {
+  background-color: var(--red-color);
+}
+
+#admin-section .view-btn:hover {
+  background-color: var(--purple-color);
+}
+
+#admin-section .send-btn:hover {
+  background-color: var(--orange-color);
+}
+
+#admin-section .bill-btn:hover {
+  background-color: var(--green-color);
+}
+
+#admin-section .send-btn:disabled,
+#admin-section .page-btn:disabled {
+  border: none !important;
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+}
+
+.send-btn:disabled .action-icon {
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+
+#admin-section table button:hover .action-icon {
+  filter: brightness(0) invert(1);
+}
+
+#admin-section .action-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+#admin-section .page-btn {
+  background-color: var(--white-color);
+}
+
+#admin-section .page-btn:hover {
+  background-color: var(--white-color);
+}
+
+#admin-section .table-spinner {
+  border: 5px solid var(--light-color);
+  border-top: 5px solid var(--dark-color);
+  width: 32px;
+  height: 32px;
+}
+
+#admin-section .excel-spinner {
+  border: 4px solid var(--light-color);
+  border-top: 4px solid var(--dark-color);
+  width: 25px;
+  height: 25px;
+}
+
+
+
+#action-modal-section .black-btn,
+#action-modal-section .red-btn,
+#action-modal-section .green-btn {
+  color: var(--white-color);
+}
+
+#action-modal-section .black-btn {
+  background-color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+}
+
+#action-modal-section .red-btn {
+  background-color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+#action-modal-section .light-btn {
+  background-color: var(--light-color);
+  border: 2px solid var(--light-color);
+}
+
+#action-modal-section .green-btn {
+  background-color: var(--green-color);
+  border: 2px solid var(--green-color);
+}
+
+#action-modal-section button:hover {
+  background-color: transparent;
+  color: var(--dark-color);
+}
+
+#action-modal-section {
+  background: rgba(54, 54, 54, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+#action-modal-section .action-modal-div {
+  background-color: var(--white-color);
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#action-modal-section .close-btn {
+  border: 2px solid var(--white-color);
+  background-color: transparent;
+  top: 18px;
+  right: 18px;
+  width: 45px;
+  height: 45px;
+}
+
+#action-modal-section .close-btn:hover {
+  background-color: var(--light-color);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+#action-modal-section .close-icon {
+  width: 21px;
+  height: 21px;
+}
+
+#action-modal-section h2 {
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+#action-modal-section .delete-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#action-modal-section .modal-body {
+  overflow-y: auto;
+}
+
+#action-modal-section label {
+  font-size: 1.1rem;
+}
+
+#action-modal-section .invalid-feedback {
+  font-size: 1rem;
+}
+
+#action-modal-section p {
+  font-size: 1.2rem;
+}
+
+#action-modal-section .action-spinner {
+  border: 4px solid var(--light-color);
+  border-top: 4px solid var(--main-color);
+  width: 25px;
+  height: 25px;
+}
+
+#action-modal-section .delete-spinner {
+  border: 4px solid var(--light-color);
+  border-top: 4px solid var(--dark-color);
+  width: 25px;
+  height: 25px;
+}
+
+#action-modal-section .modal-spinner {
+  border: 6px solid var(--light-color);
+  border-top: 6px solid var(--dark-color);
+  width: 40px;
+  height: 40px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  #admin-section table {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #action-modal-section .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #action-modal-section .container {
+    max-width: 100%;
+  }
+
+  #action-modal-section h2 {
+    font-size: 1.6rem;
+  }
+
+  #action-modal-section .delete-icon {
+    width: 90px;
+    height: 90px;
+  }
+}

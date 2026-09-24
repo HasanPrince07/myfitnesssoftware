@@ -1,0 +1,224 @@
+#loader-section {
+    height: 100vh;
+    background-color: var(--dark-color);
+}
+
+#loader-section .spinner {
+    border: 6px solid var(--light-color);
+    border-top: 6px solid var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+#loader-section h2 {
+    color: var(--light-color);
+    font-size: 28px;
+}
+
+
+
+#notfound-section {
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#notfound-section h1 {
+    font-size: 6.5rem;
+}
+
+#notfound-section h2 {
+    letter-spacing: 3px;
+}
+
+#notfound-section p {
+    font-size: 1.2rem;
+}
+
+#notfound-section button {
+    border: 2px solid var(--light-color);
+}
+
+#notfound-section .btn1 {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+#notfound-section .btn1:hover {
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+#notfound-section .btn2 {
+    color: var(--light-color);
+}
+
+#notfound-section .btn2:hover {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+
+
+
+
+#sidebar-section {
+    background-color: var(--dark-color);
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+#sidebar-section .logo {
+    width: 60%;
+}
+
+#sidebar-section a {
+    color: var(--light-color);
+    border-left: 5px solid var(--dark-color);
+}
+
+#sidebar-section a:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-left: 5px solid var(--light-color);
+}
+
+#sidebar-section a:hover .link-icon {
+    filter: brightness(0);
+}
+
+#sidebar-section a.active {
+    border-left: 5px solid var(--main-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+#sidebar-section a.active .link-icon {
+    filter: brightness(0);
+}
+
+#sidebar-section .link-icon,
+#sidebar-section .logout-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#sidebar-section button {
+    background-color: var(--light-color);
+}
+
+#sidebar-section button:hover {
+    background-color: var(--main-color);
+}
+
+
+
+#admin-header-section .toggle-icon,
+#admin-header-section .notification-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#admin-header-section button {
+    padding: 0.45rem;
+    border: 2px solid var(--white-color);
+    background-color: var(--white-color);
+}
+
+#admin-header-section button:hover {
+    background-color: var(--light-color);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #sidebar-section .logo {
+        width: 70%;
+    }
+
+    #sidebar-section .link-icon,
+    #sidebar-section .logout-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    #sidebar-section a,
+    #sidebar-section button{
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #notfound-section h1 {
+        font-size: 6rem;
+    }
+
+    #notfound-section p {
+        font-size: 1.1rem;
+    }
+
+    #admin-header-section .toggle-icon {
+        filter: brightness(0);
+    }
+
+    #modal-section {
+        background-color: var(--dark-color);
+    }
+
+    #modal-section .link-icon,
+    #modal-section .logout-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #modal-section a {
+        color: var(--light-color);
+        font-size: 0.9rem;
+    }
+
+    #modal-section a.active {
+        border-left: 4px solid var(--main-color);
+        background-color: var(--light-color);
+        color: var(--dark-color);
+    }
+
+    #modal-section a.active .link-icon {
+        filter: brightness(0);
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #loader-section .spinner {
+        border: 5px solid var(--light-color);
+        border-top: 5px solid var(--main-color);
+        width: 40px;
+        height: 40px;
+    }
+
+    #loader-section h2,
+    #notfound-section h2 {
+        font-size: 1.4rem;
+    }
+
+    #notfound-section h1 {
+        font-size: 4.7rem;
+    }
+
+    #notfound-section button {
+        font-size: 0.9rem;
+    }
+
+    #notfound-section p {
+        font-size: 1rem;
+    }
+
+    #admin-header-section h5 {
+        font-size: 1rem;
+    }
+}
